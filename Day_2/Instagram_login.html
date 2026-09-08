@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-box {
+            width: 350px;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            padding: 40px 40px 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .login-box h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 48px;
+            margin: 10px 0 30px 0;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 9px 10px;
+            margin-bottom: 6px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+            font-size: 12px;
+        }
+
+        .login-box input:focus {
+            outline: none;
+            border-color: #a8a8a8;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 8px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .login-btn:hover {
+            background-color: #1877f2;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 18px 0;
+            color: #8e8e8e;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .divider hr {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #dbdbdb;
+        }
+
+        .divider span {
+            margin: 0 18px;
+        }
+
+        .fb-login {
+            color: #385185;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+
+        .forgot-link {
+            display: block;
+            color: #00376b;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .signup-box {
+            width: 350px;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-box a {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <h1>Instagram</h1>
+            <form>
+                <input type="text" placeholder="Phone number, username, or email">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+
+            <div class="divider">
+                <hr><span>OR</span><hr>
+            </div>
+
+            <a href="facebook.html" target="_blank" class="fb-login">Log in with Facebook</a>
+            <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <div class="signup-box">
+            Don't have an account? <a href="#" target="_blank">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>

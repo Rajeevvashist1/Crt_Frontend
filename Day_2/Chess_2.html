@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Board</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .board-container {
+            display: inline-block;
+        }
+
+        /* Top and Bottom Letters */
+        .letters {
+            display: grid;
+            grid-template-columns: 30px repeat(8, 60px) 30px;
+            font-weight: bold;
+        }
+
+        .letters div {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main board */
+        .chessboard {
+            display: grid;
+            grid-template-columns: 30px repeat(8, 60px) 30px;
+            grid-template-rows: repeat(8, 60px);
+            border: 2px solid black;
+        }
+
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Chess Board</h1>
+
+    <div class="board-container">
+
+        <!-- TOP LETTERS -->
+        <div class="letters">
+            <div></div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div></div>
+        </div>
+
+        <!-- CHESS BOARD -->
+        <div class="chessboard">
+
+            <!-- Row 8 -->
+            <div class="number">8</div>
+            <div class="box white">♜</div>
+            <div class="box black">♞</div>
+            <div class="box white">♝</div>
+            <div class="box black">♛</div>
+            <div class="box white">♚</div>
+            <div class="box black">♝</div>
+            <div class="box white">♞</div>
+            <div class="box black">♜</div>
+            <div class="number">8</div>
+
+            <!-- Row 7 -->
+            <div class="number">7</div>
+            <div class="box black">♟</div>
+            <div class="box white">♟</div>
+            <div class="box black">♟</div>
+            <div class="box white">♟</div>
+            <div class="box black">♟</div>
+            <div class="box white">♟</div>
+            <div class="box black">♟</div>
+            <div class="box white">♟</div>
+            <div class="number">7</div>
+
+            <!-- Row 6 -->
+            <div class="number">6</div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="number">6</div>
+
+            <!-- Row 5 -->
+            <div class="number">5</div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="number">5</div>
+
+            <!-- Row 4 -->
+            <div class="number">4</div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="number">4</div>
+
+            <!-- Row 3 -->
+            <div class="number">3</div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="box black"></div>
+            <div class="box white"></div>
+            <div class="number">3</div>
+
+            <!-- Row 2 -->
+            <div class="number">2</div>
+            <div class="box white">♙</div>
+            <div class="box black">♙</div>
+            <div class="box white">♙</div>
+            <div class="box black">♙</div>
+            <div class="box white">♙</div>
+            <div class="box black">♙</div>
+            <div class="box white">♙</div>
+            <div class="box black">♙</div>
+            <div class="number">2</div>
+
+            <!-- Row 1 -->
+            <div class="number">1</div>
+            <div class="box black">♖</div>
+            <div class="box white">♘</div>
+            <div class="box black">♗</div>
+            <div class="box white">♕</div>
+            <div class="box black">♔</div>
+            <div class="box white">♗</div>
+            <div class="box black">♘</div>
+            <div class="box white">♖</div>
+            <div class="number">1</div>
+
+        </div>
+
+        <!-- BOTTOM LETTERS -->
+        <div class="letters">
+            <div></div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

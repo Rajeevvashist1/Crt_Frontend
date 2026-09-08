@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body background="pink">
+    <h1 style="text-align: center;">StudentRegistration form</h1>
+
+    <form action="/submit">
+
+    <label for="Roll no.">ROll No:</label>
+    <input type="text" id = "Roll no." placeholder="Enter Your Roll No." required><br><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id = "name" placeholder="Enter Your name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter Your age" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <p>Choose your gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+<br><br>
+    <button style="text-align: center;">Submit</button>
+    </form>
+
+
+
+
+
+</body>
+</html>
