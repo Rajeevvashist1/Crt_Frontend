@@ -1,0 +1,223 @@
+
+.board {
+    width: min(95vw, 650px);
+    height: min(95vw, 650px);
+
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+    border: 2px solid #222;
+    background: white;
+}
+
+/* ================= HOME AREAS ================= */
+
+.home {
+    border: 2px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-home {
+    grid-column: 1 / 7;
+    grid-row: 1 / 7;
+    background: #08a64a;
+}
+
+.yellow-home {
+    grid-column: 10 / 16;
+    grid-row: 1 / 7;
+    background: #ffdf00;
+}
+
+.red-home {
+    grid-column: 1 / 7;
+    grid-row: 10 / 16;
+    background: #f51d25;
+}
+
+.blue-home {
+    grid-column: 10 / 16;
+    grid-row: 10 / 16;
+    background: #16499b;
+}
+
+/* ================= INNER HOME ================= */
+
+.inner {
+    width: 68%;
+    height: 68%;
+
+    background: white;
+    border: 2px solid #222;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 9%;
+    gap: 8%;
+}
+
+/* ================= TOKENS ================= */
+
+.token {
+    width: 68%;
+    height: 68%;
+    border-radius: 50%;
+    border: 2.5px solid #222;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.green-home .token {
+    background: #08a64a;
+}
+
+.yellow-home .token {
+    background: #ffdf00;
+}
+
+.red-home .token {
+    background: #f51d25;
+}
+
+.blue-home .token {
+    background: #16499b;
+}
+
+/* ================= CELLS ================= */
+
+.cell {
+    background: white;
+    border: 1px solid #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= PATH COLORS ================= */
+
+.green-cell {
+    background: #08a64a;
+}
+
+.yellow-cell {
+    background: #ffdf00;
+}
+
+.red-cell {
+    background: #f51d25;
+}
+
+.blue-cell {
+    background: #16499b;
+}
+
+/* ================= STARS ================= */
+
+.star {
+    background: white;
+    font-size: clamp(18px, 3.2vw, 27px);
+    line-height: 1;
+}
+
+/* ================= ARROWS ================= */
+
+.arrow {
+    background: white;
+    font-size: clamp(20px, 3.5vw, 30px);
+    font-weight: bold;
+}
+
+.arrow-green {
+    color: #08a64a;
+}
+
+.arrow-yellow {
+    color: #ffdf00;
+}
+
+.arrow-red {
+    color: #f51d25;
+}
+
+.arrow-blue {
+    color: #16499b;
+}
+
+/* ================= CENTER ================= */
+
+.center {
+    grid-column: 7 / 10;
+    grid-row: 7 / 10;
+
+    position: relative;
+    border: 2px solid #222;
+    overflow: hidden;
+    background: white;
+}
+
+.center-yellow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: #ffdf00;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        50% 100%
+    );
+}
+
+.center-blue {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #16499b;
+
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 50%
+    );
+}
+
+.center-red {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #f51d25;
+
+    clip-path: polygon(
+        0 100%,
+        100% 100%,
+        50% 0
+    );
+}
+
+.center-green {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #08a64a;
+
+    clip-path: polygon(
+        0 0,
+        0 100%,
+        100% 50%
+    );
+}

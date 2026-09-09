@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ludo_page.css">
+<title>Ludo Board</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="board">
+
+    <!-- ================= GREEN HOME ================= -->
+
+    <div class="home green-home">
+        <div class="inner">
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+        </div>
+    </div>
+
+
+    <!-- ================= YELLOW HOME ================= -->
+
+    <div class="home yellow-home">
+        <div class="inner">
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+        </div>
+    </div>
+
+
+    <!-- ================= RED HOME ================= -->
+
+    <div class="home red-home">
+        <div class="inner">
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+        </div>
+    </div>
+
+
+    <!-- ================= BLUE HOME ================= -->
+
+    <div class="home blue-home">
+        <div class="inner">
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+            <div class="token"></div>
+        </div>
+    </div>
+
+
+    <!-- ==================================================
+         TOP / YELLOW PATH
+    ================================================== -->
+
+    <!-- Row 1 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:1;"></div>
+
+    <div class="cell arrow arrow-yellow"
+         style="grid-column:8;grid-row:1;">
+        ↓
+    </div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:1;"></div>
+
+
+    <!-- Row 2 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:2;"></div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:8;grid-row:2;"></div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:9;grid-row:2;"></div>
+
+
+    <!-- Row 3 -->
+    <div class="cell star"
+         style="grid-column:7;grid-row:3;">
+        ☆
+    </div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:8;grid-row:3;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:3;"></div>
+
+
+    <!-- Row 4 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:4;"></div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:8;grid-row:4;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:4;"></div>
+
+
+    <!-- Row 5 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:5;"></div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:8;grid-row:5;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:5;"></div>
+
+
+    <!-- Row 6 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:6;"></div>
+
+    <div class="cell yellow-cell"
+         style="grid-column:8;grid-row:6;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:6;"></div>
+
+
+    <!-- ==================================================
+         LEFT / GREEN PATH
+    ================================================== -->
+
+    <!-- Row 7 -->
+    <!-- IMPORTANT: FIRST CELL IS GREEN -->
+    <div class="cell"
+         style="grid-column:1;grid-row:7;"></div>
+
+    <div class="cell green-cell"
+         style="grid-column:2;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:3;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:4;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:5;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:6;grid-row:7;"></div>
+
+
+    <!-- Row 8 -->
+    <!-- ALL SIX CELLS ARE GREEN -->
+    <div class="cell green-cell arrow arrow-green"
+         style="grid-column:1;grid-row:8;">
+        →
+    </div>
+
+    <div class="cell green-cell"
+         style="grid-column:2;grid-row:8;"></div>
+
+    <div class="cell green-cell"
+         style="grid-column:3;grid-row:8;"></div>
+
+    <div class="cell green-cell"
+         style="grid-column:4;grid-row:8;"></div>
+
+    <div class="cell green-cell"
+         style="grid-column:5;grid-row:8;"></div>
+
+    <div class="cell green-cell"
+         style="grid-column:6;grid-row:8;"></div>
+
+
+    <!-- Row 9 -->
+    <div class="cell"
+         style="grid-column:1;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:2;grid-row:9;"></div>
+
+    <div class="cell star"
+         style="grid-column:3;grid-row:9;">
+        ☆
+    </div>
+
+    <div class="cell"
+         style="grid-column:4;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:5;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:6;grid-row:9;"></div>
+
+
+    <!-- ==================================================
+         RIGHT / BLUE PATH
+    ================================================== -->
+
+    <!-- Row 7 -->
+    <div class="cell"
+         style="grid-column:10;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:11;grid-row:7;"></div>
+
+    <div class="cell"
+         style="grid-column:12;grid-row:7;"></div>
+
+    <div class="cell star"
+         style="grid-column:13;grid-row:7;">☆</div>
+        
+    <div class="cell"
+         style="grid-column:14;grid-row:7;">
+        
+    </div>
+
+    <div class="cell"
+         style="grid-column:15;grid-row:7;"></div>
+
+
+    <!-- Row 8 -->
+    <div class="cell blue-cell"
+         style="grid-column:10;grid-row:8;"></div>
+
+    <div class="cell blue-cell"
+         style="grid-column:11;grid-row:8;"></div>
+
+    <div class="cell blue-cell"
+         style="grid-column:12;grid-row:8;"></div>
+
+    <div class="cell blue-cell"
+         style="grid-column:13;grid-row:8;"></div>
+
+    <div class="cell blue-cell"
+         style="grid-column:14;grid-row:8;"></div>
+
+    <div class="cell arrow arrow-blue"
+         style="grid-column:15;grid-row:8;">
+        ←
+    </div>
+
+
+    <!-- Row 9 -->
+    <div class="cell"
+         style="grid-column:10;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:11;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:12;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:13;grid-row:9;"></div>
+
+    <!-- BLUE BLOCK BELOW STAR -->
+    <div class="cell blue-cell"
+         style="grid-column:14;grid-row:9;"></div>
+
+    <div class="cell"
+         style="grid-column:15;grid-row:9;"></div>
+
+
+    <!-- ==================================================
+         BOTTOM / RED PATH
+    ================================================== -->
+
+    <!-- Row 10 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:10;"></div>
+
+    <div class="cell red-cell"
+         style="grid-column:8;grid-row:10;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:10;"></div>
+
+
+    <!-- Row 11 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:11;"></div>
+
+    <div class="cell red-cell"
+         style="grid-column:8;grid-row:11;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:11;"></div>
+
+
+    <!-- Row 12 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:12;"></div>
+
+    <div class="cell red-cell"
+         style="grid-column:8;grid-row:12;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:12;"></div>
+
+
+    <!-- Row 13 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:13;"></div>
+
+    <div class="cell red-cell"
+         style="grid-column:8;grid-row:13;"></div>
+
+    <div class="cell star"
+         style="grid-column:9;grid-row:13;">
+        ☆
+    </div>
+
+
+    <!-- Row 14 -->
+    <div class="cell red-cell"
+         style="grid-column:7;grid-row:14;"></div>
+
+    <div class="cell red-cell"
+         style="grid-column:8;grid-row:14;"></div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:14;"></div>
+
+
+    <!-- Row 15 -->
+    <div class="cell"
+         style="grid-column:7;grid-row:15;"></div>
+
+    <div class="cell arrow arrow-red"
+         style="grid-column:8;grid-row:15;">
+        ↑
+    </div>
+
+    <div class="cell"
+         style="grid-column:9;grid-row:15;"></div>
+
+
+    <!-- ==================================================
+         CENTER
+    ================================================== -->
+
+    <div class="center">
+
+        <div class="center-yellow"></div>
+
+        <div class="center-blue"></div>
+
+        <div class="center-red"></div>
+
+        <div class="center-green"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

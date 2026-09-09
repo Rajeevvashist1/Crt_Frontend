@@ -1,0 +1,242 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajeev Vashisth — Software Engineer</title>
+<meta name="description" content="Portfolio of Rajeev Vashisth — Computer Science student building automation tools and web applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">RV</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="assets/resume.pdf" class="btn btn-ghost" download>Resume</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="status-line"><span class="status-dot" aria-hidden="true"></span>Open to internships &amp; full-time roles</p>
+        <h1>I build systems that catch what humans miss.</h1>
+        <p class="hero-sub">Computer Science student focused on automation tooling and full-stack web development. I spent a summer teaching a plant floor's robots to tell on themselves — now I'm looking for the next hard problem.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+        <dl class="stat-row">
+          <div class="stat">
+            <dt>632+</dt>
+            <dd>days of plant log data automated</dd>
+          </div>
+          <div class="stat">
+            <dt>5GB+</dt>
+            <dd>industrial data processed</dd>
+          </div>
+          <div class="stat">
+            <dt>9.0</dt>
+            <dd>GPA / 10.0</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Rajeev Vashisth" width="480" height="600">
+          <span class="frame-tag frame-tag-tl" aria-hidden="true"></span>
+          <span class="frame-tag frame-tag-br" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap about-grid">
+      <h2 class="section-label">About</h2>
+      <div class="about-body">
+        <p>I'm a B.Tech Computer Science student at Poornima College of Engineering, Jaipur. Most of what I know I picked up by building things rather than sitting through theory — that's shown up most clearly in production settings, not classrooms.</p>
+        <p>At Maruti Suzuki's Manesar plant, I was handed a real operations problem — nobody had a reliable way to track program changes across the welding robots — and built the tool myself from scratch, end to end. It got rated "Excellent" by my supervisor and ran daily in production. That's the standard I hold my own projects to.</p>
+        <p>Outside of internships, I'm working through DSA (Striver's A2Z, Love Babbar's 450) and building web applications with React and Node — currently targeting product-based companies for my next role.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-label">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="tag-list">
+            <li>C</li><li>C++</li><li>Python</li><li>Java</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; Data</h3>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>React.js</li><li>Next.js</li><li>Node.js</li><li>MongoDB</li><li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Practice</h3>
+          <ul class="tag-list">
+            <li>Git / GitHub</li><li>VS Code</li><li>WordPress</li><li>Canva</li><li>UI/UX Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2 class="section-label">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date"><time>Jun – Aug 2025</time></div>
+          <div class="timeline-content">
+            <h3>Automation Intern — Maruti Suzuki India Ltd.</h3>
+            <p class="timeline-meta">Manesar Plant, Weld Shop · Python, MySQL, Industrial Automation</p>
+            <ul>
+              <li>Independently designed and built IRCMS (Industrial Robot Change Monitoring System), parsing 632+ days and 5GB+ of daily robot log data to track program changes across the plant's welding robots.</li>
+              <li>Automated daily before/after diff reports with change-detection highlighting via Windows Task Scheduler, backed by JSON persistence — rated "Excellent" by supervisor.</li>
+              <li>Built a MySQL database column-watcher tool to monitor schema and data changes for a secondary manager-assigned task.</li>
+              <li>Designed a 45-robot industrial network layout (dual 24-port managed hubs) and was introduced to OPC UA middleware (KEPServerEX) and Historian databases.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date"><time>Aug 2025</time></div>
+          <div class="timeline-content">
+            <h3>Intern — RENAO Robotics Pvt. Ltd.</h3>
+            <p class="timeline-meta">15 days · C++, DSA, OOP</p>
+            <ul>
+              <li>Built and tested C++ programs applying object-oriented principles, STL containers, and algorithmic problem-solving.</li>
+              <li>Implemented core data structures — arrays, stacks, queues, linked lists — to solve applied computational problems.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date"><time>Feb 2025</time></div>
+          <div class="timeline-content">
+            <h3>Generative AI Tools &amp; Use Cases</h3>
+            <p class="timeline-meta">30 hours · ChatGPT, DALL·E, Google Colab</p>
+            <ul>
+              <li>Completed a hands-on program covering practical applications of generative AI tools across text, image, and notebook-based workflows.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-label">Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Market Basket Analysis</h3>
+            <span class="project-date">Aug 2025</span>
+          </div>
+          <p>A market basket analysis pipeline that mines frequent itemsets and association rules from transactional data using the Apriori algorithm, translating purchase-pattern findings into concrete recommendations for cross-selling, upselling, and product placement.</p>
+          <ul class="tag-list tag-list-mono">
+            <li>Python</li><li>Pandas</li><li>Apriori Algorithm</li>
+          </ul>
+          <a href="https://github.com/Rajeevvashist1" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>MediBridge</h3>
+            <span class="project-date">Sep 2025</span>
+          </div>
+          <p>A responsive frontend connecting medicine donors, listings, and NGO requests to streamline medical resource sharing — built with accessibility and clear navigation as first-class priorities to build trust between donors and requesting organizations.</p>
+          <ul class="tag-list tag-list-mono">
+            <li>React.js</li><li>Tailwind CSS</li>
+          </ul>
+          <a href="https://github.com/Rajeevvashist1" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <h2 class="section-label">Education</h2>
+      <div class="edu-item">
+        <div class="edu-head">
+          <h3>B.Tech, Computer Science</h3>
+          <span class="edu-date">2024 – 2028</span>
+        </div>
+        <p class="timeline-meta">Poornima College of Engineering, Jaipur · GPA 9.0 / 10.0</p>
+      </div>
+      <div class="edu-item">
+        <div class="edu-head">
+          <h3>Vivekanand Se. Sec. School, Rewari</h3>
+          <span class="edu-date">2021 – 2023</span>
+        </div>
+        <p class="timeline-meta">12th — 83% &nbsp;·&nbsp; 10th — 80%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="section-label">Contact</h2>
+        <p class="contact-lead">Looking for a software engineering internship or full-time role. Reach out — I reply fast.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:vashistrajeev2611@gmail.com" class="contact-link">
+          <span>Email</span>
+          <strong>vashistrajeev2611@gmail.com</strong>
+        </a>
+        <a href="https://github.com/Rajeevvashist1" class="contact-link" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <strong>github.com/Rajeevvashist1</strong>
+        </a>
+        <a href="https://linkedin.com/in/rajeev-vashist2" class="contact-link" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/rajeev-vashist2</strong>
+        </a>
+        <a href="#" class="contact-link" target="_blank" rel="noopener">
+          <span>LeetCode</span>
+          <strong>View profile</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Rajeev Vashisth. Built from scratch with HTML &amp; CSS.</p>
+  </div>
+</footer>
+
+</body>
+</html>
