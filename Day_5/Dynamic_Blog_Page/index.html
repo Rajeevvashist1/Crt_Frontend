@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Blog Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <header class="header">
+        <h1>Dynamic Blog</h1>
+        <p>Read interesting post from our blog</p>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <input type="search" id="searchinput" placeholder="Search posts by title...">
+
+            <button id="realoadButton" type="button">Reload Posts</button>
+        </section>
+        <p id="statusMessage" role="status" aria-live="polite">Loading Posts...</p>
+        <section id="postsContainer" class="posts-grid"></section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
